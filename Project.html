@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vyshgorod City 🏙</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #0078d7;
+        border: 2px solid #708098;
+        padding: 12px;
+        border-radius: 3px;
+      }
+      h2 {
+        text-align: center;
+        line-height: 50px;
+      }
+      div {
+        background: linear-gradient(
+          99.6deg,
+          rgb(112, 128, 152) 10.6%,
+          rgb(242, 227, 234) 32.9%,
+          rgb(234, 202, 213) 52.7%,
+          rgb(220, 227, 239) 72.8%,
+          rgb(185, 205, 227) 81.1%,
+          rgb(154, 180, 212) 102.4%
+        );
+        border-radius: 10px;
+        padding: 30px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 12px;
+        padding: 8px;
+        max-width: 85%;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 18px;
+        text-align: left;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #fce100;
+        font-size: 25px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 30px;
+        color: #0078d7;
+        text-decoration: none;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .builder {
+        text-align: center;
+        padding: 20px 20px 0px;
+        margin: 0 auto;
+        font-size: 15px;
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Vyshgorod</h1>
+      <h2>It is my hometown in Ukraine 💙💛</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/033/929/original/Vyshgorod.jpg?1652194733"
+        alt="Vyshgorod city"
+      />
+      <hr />
+      <p>
+        <em>Vyshhorod</em> is a city in Kyiv region. It situated on the north of
+        Kyiv city, on the right bank of Dnipro river. In 946 the city was first
+        mentioned in Primary Chronicle (old slavic-Повѣсть времѧньныхъ лѣтъ). In
+        XI century in <em>Vyshgorod</em> were buried princes Boris and Gleb -
+        first saints canonized in Kievan Rus'. The most important monuments of
+        the city are its historical landscape and the ancient Boris and Gleb
+        Church.
+      </p>
+      <a
+        class="learn-more"
+        href="https://uk.wikipedia.org/wiki/%D0%92%D0%B8%D1%88%D0%B3%D0%BE%D1%80%D0%BE%D0%B4"
+        target="_blank"
+      >
+        Learn more on Wikipedia
+      </a>
+      <br />
+      <button>Buy book</button>
+      <p class="builder">This page was built by Julia Pushko</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let hometown = prompt("What is your hometown?");
+
+        if (hometown === "Vyshgorod") {
+          alert("Nice to meet you, " + name + "! God blessed you 💙💛");
+        } else {
+          alert(
+            "Nice to meet you, " +
+              name +
+              "! You shoud buy this book, for sure 😉"
+          );
+        }
+      }
+      let buyButton = document.querySelector("button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
